@@ -1,0 +1,20 @@
+table {
+    width: 100%;
+  }
+div#primera{
+    float: left;
+    width: 50%;
+    padding: 5%;
+}
+div#segunda{
+    float: right;
+    width: 50%;
+    padding: 5%;
+}
+h3{
+
+    padding: 1% 0 0 70%;   
+    color: #010511;
+    font-size:25px;
+    
+} 

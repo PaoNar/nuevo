@@ -1,0 +1,25 @@
+div#header{
+    margin: auto;
+    width: 100%;
+    height: 160px;
+    background-color: #c4dae9;
+  }
+
+h3{
+    padding: 1% 0 0 5%;   
+    color: #010511;
+    font-size:25px;
+    
+} 
+
+h1{
+  padding: 0 0 0 20%;   
+  color: #0f90e6;
+  
+}
+
+
+div#tabla4{
+    width: 90%;
+    padding: 2% 15% 2% 25%;
+ }

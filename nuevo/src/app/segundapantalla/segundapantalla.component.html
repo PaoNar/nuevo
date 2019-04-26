@@ -1,0 +1,63 @@
+<app-barra></app-barra>
+
+
+<div class="col-row">
+    <app-seleccion1 class="col-md"></app-seleccion1>
+    <app-seleccion2 class="col-md"></app-seleccion2>
+    <a href="/tercera"><button type="button" color="primary"> CONSULTAR </button></a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div >
+    <div  id="primera">
+        <h3>
+            <mat-label>MALLA 1</mat-label>
+          </h3>
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+            <!--- Note that these columns can be defined in any order.
+                  The actual rendered columns are set as a property on the row definition" -->
+          
+            <!-- Position Column -->
+            <ng-container matColumnDef="semestre">
+              <th mat-header-cell *matHeaderCellDef> semestre </th>
+              <td mat-cell *matCellDef="let element"> {{element.semestre}} </td>
+            </ng-container>
+          
+            <!-- Name Column -->
+            <ng-container matColumnDef="paraleloa">
+              <th mat-header-cell *matHeaderCellDef> paralelo a </th>
+              <td mat-cell *matCellDef="let element"> {{element.paraleloa}} </td>
+            </ng-container>
+          
+            <!-- Weight Column -->
+            <ng-container matColumnDef="paralelob">
+              <th mat-header-cell *matHeaderCellDef> paralelo b </th>
+              <td mat-cell *matCellDef="let element"> {{element.paralelob}} </td>
+            </ng-container>
+          
+            <!-- Symbol Column -->
+            
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+    </div>
+    <div id="segunda">
+        <app-tabla2></app-tabla2>
+    </div>
+</div>
+
